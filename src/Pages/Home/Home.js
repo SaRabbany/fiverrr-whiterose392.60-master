@@ -1,7 +1,9 @@
 import React from 'react';
+import ChooseRightPackage from './ChooseRightPackage';
 import EarlySupporter from './EarlySupporter';
 import HeaderSection from './HeaderSection';
 import "./Home.css"
+import RoadMap from './RoadMap';
 import WhyPolystarter from './WhyPolystarter';
 
 const Home = () => {
@@ -10,6 +12,8 @@ const Home = () => {
         <HeaderSection/>
         <EarlySupporter/>
         <WhyPolystarter/>
+        <ChooseRightPackage/>
+        <RoadMap/>
             
         </>
     );

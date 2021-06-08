@@ -102,11 +102,17 @@
                     position: relative;
                     ul.navbar-list {
                         display: block;
-                        background:rgb(211, 226, 214);
+                        background:rgb(19, 21, 22);;
                         width:80%;
+                        padding-left:0px;
                         li.navbar-list-item {
                             text-align: center;
                             .navbar-list-link {
+                                color:white;
+                                width:100%;
+                                &:hover{
+                                    background:rgba(109, 109, 109, 0.164);
+                                }
                             }
                         }
                     }

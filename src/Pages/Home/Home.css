@@ -30,7 +30,7 @@ section#about .About-Card_edaNDK .icon img {
 }
 
 section#about .About-Card_edaNDK .card-title {
-  color: #34ACEA !important;
+  color: #34acea !important;
   font-size: 20px;
   font-family: aveneirBold;
   font-weight: normal;
@@ -73,11 +73,210 @@ section#about .About-Card_edaNDK:hover {
 
 #feature #sliderPart .SwiperSlider-box {
   height: auto;
-  background: #0B0B0C;
+  background: #0b0b0c;
   padding: 40px 20px;
   border-radius: 10px;
   -webkit-transition: 0.3s all !important;
   transition: 0.3s all !important;
+}
+
+#roadmap .road-map-full-area .roadmap-line {
+  width: 100%;
+  height: 3px;
+  background: #6d6d6d;
+  position: relative;
+  z-index: 1;
+  margin: 7rem auto;
+  margin-top: 11rem;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-card {
+  position: absolute;
+  width: 300px;
+  z-index: 1;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-card.card-1 {
+  left: 0px;
+  top: 40px;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-card.card-2 {
+  left: 20%;
+  top: 40px;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-card.card-3 {
+  left: 40%;
+  bottom: 25px;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-card.card-4 {
+  left: 60%;
+  top: 40px;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-card.card-5 {
+  left: 80%;
+  bottom: 25px;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-circle {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-circle:nth-child(1) {
+  left: 20%;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-circle:nth-child(2) {
+  left: 40%;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-circle:nth-child(3) {
+  left: 60%;
+}
+
+#roadmap .road-map-full-area .roadmap-line .road-map-circle:nth-child(4) {
+  left: 80%;
+}
+
+#Subscriptions body {
+  background: #000;
+}
+
+#Subscriptions .the-header-part {
+  text-align: center;
+}
+
+#Subscriptions .the-header-part .the-main-title {
+  color: #fff;
+}
+
+#Subscriptions .the-gradient-boxes {
+  padding: 100px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Subscriptions .the-gradient-boxes.second {
+  padding-top: 20px;
+  max-width: 700px;
+}
+
+#Subscriptions .the-gradient-boxes.third {
+  padding-top: 20px;
+  max-width: 700px;
+}
+
+#Subscriptions .first-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#3e270b));
+  background: linear-gradient(to top right, #0e0f10, #3e270b);
+}
+
+#Subscriptions .second-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#3d3d3d));
+  background: linear-gradient(to top right, #0e0f10, #3d3d3d);
+}
+
+#Subscriptions .third-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#544525));
+  background: linear-gradient(to top right, #0e0f10, #544525);
+}
+
+#Subscriptions .fourth-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#133829));
+  background: linear-gradient(to top right, #0e0f10, #133829);
+}
+
+#Subscriptions .fifth-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#4a0c0d));
+  background: linear-gradient(to top right, #0e0f10, #4a0c0d);
+}
+
+#Subscriptions .sixth-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#71735e));
+  background: linear-gradient(to top right, #0e0f10, #71735e);
+}
+
+#Subscriptions .seventh-box {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0e0f10), to(#3c5862));
+  background: linear-gradient(to top right, #0e0f10, #3c5862);
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box {
+  width: 320px;
+  padding: 30px;
+  color: #fff;
+  border-radius: 12px;
+  margin: 0px 25px 15px 0px;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .first-block .first-block-title h2 {
+  font-size: 3.5rem;
+  font-family: aveneirBold;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .the-second-title h3 {
+  font-family: aveneirBold;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .first-block .small-line,
+#Subscriptions .the-header-part .small-line {
+  letter-spacing: 1.5px;
+  color: #969595;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .first-block .first-block-title h2,
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block .the-number h2 {
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block {
+  margin-top: 50px;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block .the-second-title h3 {
+  font-weight: bolder;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block .the-second-title h3::after,
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block .second-block-middle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 15px 0;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block .small-line {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #969595;
+  font-weight: bolder;
+}
+
+#Subscriptions .the-gradient-boxes .the-gradient-box .second-block .the-third-title h4 {
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 @-webkit-keyframes upDown {
