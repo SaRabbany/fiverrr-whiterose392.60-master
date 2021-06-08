@@ -5,7 +5,8 @@ $primary-gradient: linear-gradient(to right, $primary-color, $primary-color-deep
 #header {
   width: 100%;
   height: auto;
-  background: url(../../Images/background.png) no-repeat;
+  background: url(../../Images/header-background.png) no-repeat;
+  background-size: cover;
   h1 {
     font-size: 60px;
     font-weight: bold;
@@ -80,6 +81,7 @@ section#about {
 }
 
 #roadmap {
+    padding-bottom: 7rem;
   .road-map-full-area {
     .roadmap-line {
       width: 100%;
@@ -137,6 +139,62 @@ section#about {
   }
 }
 
+#investor_section {
+  background: url(../../Images/porltext.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 2rem;
+  .logo-section .ufrer-part {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .logo-section .ufrer-part .small-line,
+  .contact-section .ufrer-part .small-line {
+    font-size: 13px;
+  }
+  .logo-section .ufrer-part .the-ufrer-title h2,
+  .contact-section .ufrer-part .the-ufrer-title h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .logo-section .logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logo-section .logos .logo {
+    width: 30%;
+    margin-bottom: 50px;
+    transition: all 1s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  .logo-section .logos .logo img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .DSfmslfosmff {
+    background: #0e0f10;
+  }
+  @media screen and (max-width: 767px) {
+    .logo-section .logos .nai-ha {
+      display: none;
+    }
+
+    .logo-section .logos .logo {
+      width: 50%;
+    }
+    .logo-section .logos .sudu-nai {
+      width: 100%;
+    }
+  }
+}
+
 #Subscriptions {
   body {
     background: #000;
@@ -155,13 +213,13 @@ section#about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    &.second{
-        padding-top: 20px;;
-        max-width: 700px;;
+    &.second {
+      padding-top: 20px;
+      max-width: 700px;
     }
-    &.third{
-        padding-top: 20px;;
-        max-width: 700px;;
+    &.third {
+      padding-top: 20px;
+      max-width: 700px;
     }
   }
 
@@ -200,18 +258,18 @@ section#about {
     border-radius: 12px;
     margin: 0px 25px 15px 0px;
 
-    .first-block{
-        .first-block-title{
-            h2{
-                font-size:3.5rem;
-                font-family: aveneirBold;
-            }
+    .first-block {
+      .first-block-title {
+        h2 {
+          font-size: 3.5rem;
+          font-family: aveneirBold;
         }
+      }
     }
-    .the-second-title{
-        h3{
-            font-family: aveneirBold;
-        }
+    .the-second-title {
+      h3 {
+        font-family: aveneirBold;
+      }
     }
   }
 
@@ -257,6 +315,54 @@ section#about {
   .the-gradient-boxes .the-gradient-box .second-block .the-third-title h4 {
     font-size: 16px;
     font-weight: bolder;
+  }
+}
+
+#contact {
+  .contact-section {
+    width: 80%;
+    margin: auto;
+    padding: 45px;
+    background: rgba(250, 250, 250, 0.1);
+    border-radius: 13px;
+  }
+
+  .contact-section .ufrer-part {
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  /* .contact-section .the-contact-form {
+
+        } */
+  .contact-section .the-contact-form .the-first-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact-section .the-contact-form .the-first-block .input-holder,
+  .contact-section .the-contact-form .the-second-block .input-holder {
+    width: 45%;
+  }
+
+  .contact-section .the-contact-form input,
+  .contact-section .the-contact-form textarea {
+    background: rgba(250, 250, 250, 0.5);
+    outline: none;
+    border: none;
+  }
+
+  .contact-section .the-contact-form textarea {
+    height: auto !important;
+  }
+
+  @media screen and (max-width: 767px) {
+    .contact-section .the-contact-form .the-first-block .input-holder,
+    .contact-section .the-contact-form .the-second-block .input-holder {
+      width: 100%;
+    }
   }
 }
 
