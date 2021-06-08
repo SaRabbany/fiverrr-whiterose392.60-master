@@ -1,0 +1,112 @@
+#header {
+  width: 100%;
+  height: auto;
+  background: url(../../Images/background.png) no-repeat;
+}
+
+#header h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  font-family: aveneirBold;
+}
+
+#header .banner-illustration img {
+  -webkit-animation: upDown 3s infinite;
+          animation: upDown 3s infinite;
+}
+
+section#about .About-Card_edaNDK {
+  padding: 20px;
+  margin: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border-radius: 10px;
+}
+
+section#about .About-Card_edaNDK .icon img {
+  margin-bottom: 20px;
+  width: 60px;
+}
+
+section#about .About-Card_edaNDK .card-title {
+  color: #34ACEA !important;
+  font-size: 20px;
+  font-family: aveneirBold;
+  font-weight: normal;
+}
+
+section#about .About-Card_edaNDK .card-text-A943Ssh {
+  font-family: aveneirBold;
+  font-size: 15px;
+}
+
+section#about .About-Card_edaNDK:hover {
+  background: #030712;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#feature {
+  margin-bottom: 3rem;
+}
+
+#feature #sliderPart .swiper-container {
+  overflow: hidden;
+}
+
+#feature #sliderPart .swiper-button-prev, #feature #sliderPart .swiper-button-next {
+  left: -320px;
+}
+
+#feature #sliderPart .swiper-button-prev::after, #feature #sliderPart .swiper-button-next::after {
+  background: white;
+  font-size: 40px;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+
+#feature #sliderPart .swiper-button-next {
+  left: auto;
+  right: -320px;
+}
+
+#feature #sliderPart .SwiperSlider-box {
+  height: auto;
+  background: #0B0B0C;
+  padding: 40px 20px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s all !important;
+  transition: 0.3s all !important;
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+/*# sourceMappingURL=Home.css.map */

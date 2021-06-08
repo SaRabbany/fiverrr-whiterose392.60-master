@@ -1,0 +1,42 @@
+$primary-color:  #34ACEA;
+$primary-color-deep: #1270ED;
+$primary-gradient: linear-gradient(to right ,$primary-color, $primary-color-deep);
+
+
+
+@font-face {
+  font-family: AveneirReguler;
+  src: url(Fonts/aveneirNext/AvenirNext-Regular-08.ttf);
+}
+@font-face {
+  font-family: aveneirBold;
+  src: url(Fonts/aveneirNext/AvenirNext-Bold-01.ttf);
+}
+body{
+  background:#020305;
+  color:white;
+  font-family: AveneirReguler !important;
+}
+.theme-text{
+    color:$primary-color;
+    font-family: aveneirBold;
+}
+.theme-btn{
+    background: $primary-gradient;
+    border:none;
+    font-family: aveneirReguler;
+    padding:10px 25px;
+    color:white;
+    border-radius: 5px
+
+}
+.dark-btn{
+    @extend .theme-btn;
+    background:#020305;
+    color:white;
+}
+.container{
+  @media screen and (min-width:992px) {
+    max-width: 1040px !important;
+  }
+}

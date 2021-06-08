@@ -1,0 +1,42 @@
+@font-face {
+  font-family: AveneirReguler;
+  src: url(Fonts/aveneirNext/AvenirNext-Regular-08.ttf);
+}
+
+@font-face {
+  font-family: aveneirBold;
+  src: url(Fonts/aveneirNext/AvenirNext-Bold-01.ttf);
+}
+
+body {
+  background: #020305;
+  color: white;
+  font-family: AveneirReguler !important;
+}
+
+.theme-text {
+  color: #34ACEA;
+  font-family: aveneirBold;
+}
+
+.theme-btn, .dark-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#34ACEA), to(#1270ED));
+  background: linear-gradient(to right, #34ACEA, #1270ED);
+  border: none;
+  font-family: aveneirReguler;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+}
+
+.dark-btn {
+  background: #020305;
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1040px !important;
+  }
+}
+/*# sourceMappingURL=App.css.map */
