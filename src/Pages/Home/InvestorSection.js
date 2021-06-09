@@ -8,31 +8,31 @@ import investorImg6 from "../../Images/investor6.png";
 
 const InvestorSection = () => {
   return (
-    <section id="investor_section">
-      <div className="title p-5 container text-center">
-        <p className="fw-bolder">Investor</p>
-        <h1>Investor</h1>
+    <section id="investor_section" className="mt-5">
+      <div className="title p-4 container text-center">
+        <p className=" fw-md text-secondary mb-0">Investor</p>
+        <h1 className="fw-bolder">Investor</h1>
       </div>
-      <div class="logo-section">
-        <div className="col-10 DSfmslfosmff mx-auto">
-          <div class="logos">
-            <div class="logo nai-ha">
+      <div className="logo-section">
+        <div className="DSfmslfosmff mx-auto">
+          <div className="logos pb-1">
+            <div className="logo nai-ha">
               <img src={investorImg1} alt="" />
             </div>
-            <div class="logo sudu-nai">
+            <div className="logo sudu-nai">
               <img src={investorImg2} alt="" />
             </div>
-            <div class="logo">
-              <img src={investorImg3} alt="" />
-            </div>
-
-            <div class="logo">
-              <img src={investorImg4} alt="" />
-            </div>
-            <div class="logo">
+            <div className="logo">
               <img src={investorImg5} alt="" />
             </div>
-            <div class="logo">
+
+            <div className="logo">
+              <img src={investorImg4} alt="" />
+            </div>
+            <div className="logo">
+              <img src={investorImg3} alt="" />
+            </div>
+            <div className="logo">
               <img src={investorImg6} alt="" />
             </div>
           </div>

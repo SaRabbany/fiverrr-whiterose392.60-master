@@ -8,10 +8,24 @@
   src: url(Fonts/aveneirNext/AvenirNext-Bold-01.ttf);
 }
 
+@font-face {
+  font-family: aveneirMedium;
+  src: url(Fonts/aveneirNext/AvenirNext-DemiBold-03.ttf);
+}
+
 body {
-  background: #020305;
+  background: #020305 !important;
   color: white;
   font-family: AveneirReguler !important;
+}
+
+.fw-md {
+  font-family: aveneirMedium !important;
+}
+
+.fw-bolder {
+  font-family: aveneirBold !important;
+  font-weight: normal !important;
 }
 
 .theme-text {

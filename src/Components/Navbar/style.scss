@@ -41,6 +41,7 @@
                     display: flex;
                     margin-bottom: 0px !important;
                     width: 100%;
+                    align-items: center;
                     li.navbar-list-item {
                         list-style: none;
                         .navbar-list-link {
@@ -80,6 +81,9 @@
             .hnazmul-nav-toggle-btn {
                 display: block;
                 margin-left: auto;
+                button{
+                    background:transparent;
+                }
             }
             .hnazmul-navbar-content {
                 display: block;

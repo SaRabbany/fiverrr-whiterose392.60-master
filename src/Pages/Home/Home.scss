@@ -2,16 +2,61 @@ $primary-color: #34acea;
 $primary-color-deep: #1270ed;
 $primary-gradient: linear-gradient(to right, $primary-color, $primary-color-deep);
 
+body {
+  @media screen and (max-width: 767px) {
+    overflow-x: hidden;
+  }
+  .container {
+    @media screen and (max-width: 767px) {
+      max-width: 90%;
+    }
+  }
+}
+
+.theme-btn-black {
+  background: #393939;
+  border: none !important;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
 #header {
   width: 100%;
   height: auto;
   background: url(../../Images/header-background.png) no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 767px) {
+    background: url(../../Images/mobile-header-background.png) no-repeat top center !important;
+    background-size: cover;
+  }
+
+  .dots-image {
+    position: absolute;
+    right: -50px;
+    width: 100px;
+    top: 140px;
+  }
+  .dots-image-2 {
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    left: -20px;
+    z-index: -1;
+  }
+
   h1 {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
     font-family: aveneirBold;
+    @media screen and (max-width: 800px) {
+      font-size: 34px;
+      text-align: left;
+    }
   }
   .banner-illustration {
     img {
@@ -19,8 +64,23 @@ $primary-gradient: linear-gradient(to right, $primary-color, $primary-color-deep
     }
   }
 }
+.form-control {
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+    border-width: 0px;
+    box-shadow: none;
+  }
+}
 
 section#about {
+  .title {
+    .light {
+      font-weight: light;
+    }
+  }
+
   .About-Card_edaNDK {
     padding: 20px;
     margin: 10px;
@@ -39,49 +99,47 @@ section#about {
       font-weight: normal;
     }
     .card-text-A943Ssh {
-      font-family: aveneirBold;
+      font-family: aveneirReguler;
       font-size: 15px;
+      color:rgb(75, 75, 75) !important;
+      line-height: 18px;
     }
     &:hover {
-      background: #030712;
+      background: #000f356e;
       transform: translateY(-10px);
     }
   }
 }
 #feature {
   margin-bottom: 3rem;
-
-  #sliderPart {
-    .swiper-container {
-      overflow: hidden;
+  background: #030712;
+  #carouselExampleControls {
+    .carousel-inner {
+      width: 80%;
+      margin: auto;
+      background: #0e0e10;
+      border-radius: 20%;
     }
+  }
 
-    .swiper-button-prev {
-      left: -320px;
-      &::after {
-        background: white;
-        font-size: 40px;
-        padding: 10px 20px;
-        border-radius: 50%;
+  .slider-box_DINDnad {
+    height: auto;
+
+    background: #0b0b0c !important;
+    padding: 40px 20px;
+    border-radius: 10px;
+    transition: 0.3s all !important;
+
+    .card-wrapper {
+      @media screen and (max-width: 992px) {
+        text-align: center;
       }
-    }
-    .swiper-button-next {
-      @extend .swiper-button-prev;
-      left: auto;
-      right: -320px;
-    }
-    .SwiperSlider-box {
-      height: auto;
-      background: #0b0b0c;
-      padding: 40px 20px;
-      border-radius: 10px;
-      transition: 0.3s all !important;
     }
   }
 }
 
 #roadmap {
-    padding-bottom: 7rem;
+  padding-bottom: 7rem;
   .road-map-full-area {
     .roadmap-line {
       width: 100%;
@@ -115,6 +173,7 @@ section#about {
         &.card-5 {
           left: 80%;
           bottom: 25px;
+          width: 168px;
         }
       }
 
@@ -123,7 +182,7 @@ section#about {
         width: 12px;
         position: absolute;
         z-index: 1;
-        background: white;
+        background: $primary-color;
         border-radius: 50%;
         top: 50%;
         left: 50%;
@@ -132,6 +191,64 @@ section#about {
         @for $i from 1 through 4 {
           &:nth-child(#{$i}) {
             left: 20% * $i;
+          }
+          @media screen and (max-width: 767px) {
+            &:nth-child(#{$i}) {
+              top: 20% * $i;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 2px;
+        height: 980px;
+        margin: 20px 0px 20px 51vw;
+        p {
+          font-size: 13px;
+          color: dimgrey;
+          font-family: aveneirMedium;
+        }
+        h1 {
+          font-size: 30px;
+          font-family: aveneirBold;
+        }
+        .road-map-card {
+          width: 120px;
+          &.card-1 {
+            top: 0px;
+            left: 26px;
+            color: dimgray;
+            font-family: "aveneirBold";
+            h1 {
+              font-size: 50px;
+              opacity: 0.5;
+            }
+          }
+          &.card-2 {
+            top: 20%;
+            /* left: 40px; */
+            right: 26px;
+            left: auto;
+          }
+          &.card-3 {
+            top: 40%;
+            /* right: 25px; */
+            left: 25px;
+          }
+          &.card-4 {
+            top: 60%;
+            left: auto;
+            right: 10px;
+          }
+          &.card-5 {
+            top: 80%;
+            left: 25px;
+            right: auto;
+            width: 124px;
+            h1 {
+              font-size: 50px;
+            }
           }
         }
       }
@@ -143,6 +260,7 @@ section#about {
   background: url(../../Images/porltext.png) no-repeat center;
   background-size: cover;
   padding-bottom: 2rem;
+  background: #0e0f10;
   .logo-section .ufrer-part {
     padding: 60px 0;
     text-align: center;
@@ -159,15 +277,16 @@ section#about {
   }
   .logo-section .logos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 40px 0;
     width: 80%;
     margin: 0 auto;
+    row-gap: 10px;
   }
   .logo-section .logos .logo {
     width: 30%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     transition: all 1s;
     &:hover {
       transform: translateY(-10px);
@@ -179,7 +298,6 @@ section#about {
     object-fit: contain;
   }
   .DSfmslfosmff {
-    background: #0e0f10;
   }
   @media screen and (max-width: 767px) {
     .logo-section .logos .nai-ha {
@@ -187,7 +305,7 @@ section#about {
     }
 
     .logo-section .logos .logo {
-      width: 50%;
+      width: 40%;
     }
     .logo-section .logos .sudu-nai {
       width: 100%;
@@ -196,9 +314,7 @@ section#about {
 }
 
 #Subscriptions {
-  body {
-    background: #000;
-  }
+  background: #77777718;
 
   .the-header-part {
     text-align: center;
@@ -257,6 +373,12 @@ section#about {
     color: #fff;
     border-radius: 12px;
     margin: 0px 25px 15px 0px;
+
+    @media screen and (max-width: 500px) {
+      width: 300px;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
 
     .first-block {
       .first-block-title {
@@ -318,13 +440,32 @@ section#about {
   }
 }
 
+// Tokenomics
+#tokenomics {
+  .title {
+    p {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+}
+
 #contact {
+  padding-bottom: 150px;
   .contact-section {
     width: 80%;
     margin: auto;
     padding: 45px;
     background: rgba(250, 250, 250, 0.1);
     border-radius: 13px;
+
+    @media screen and (max-width: 767px) {
+      width: 97%;
+    }
   }
 
   .contact-section .ufrer-part {
@@ -345,13 +486,29 @@ section#about {
   .contact-section .the-contact-form .the-first-block .input-holder,
   .contact-section .the-contact-form .the-second-block .input-holder {
     width: 45%;
+    label {
+      color: dimgrey;
+      &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+  label {
+    color: dimgray;
+    font-size: 14px;
+    font-family: aveneirMedium;
   }
 
   .contact-section .the-contact-form input,
   .contact-section .the-contact-form textarea {
-    background: rgba(250, 250, 250, 0.5);
+    background: #121212;
     outline: none;
     border: none;
+
+    &:active,
+    &:focus {
+      border-bottom: 1px solid white;
+    }
   }
 
   .contact-section .the-contact-form textarea {
@@ -362,6 +519,43 @@ section#about {
     .contact-section .the-contact-form .the-first-block .input-holder,
     .contact-section .the-contact-form .the-second-block .input-holder {
       width: 100%;
+    }
+  }
+}
+
+#FAQs {
+  margin-bottom: 5rem;
+
+  .all-cards-wrapper {
+    background: rgba(255, 255, 255, 0.055);
+    padding: 2rem 10px;
+    border-radius: 20px;
+  }
+  .title {
+    transform: translateX(-50px);
+    @media screen and (max-width: 992px) {
+      transform: none;
+    }
+  }
+  #collapse-Card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+    color: dimgrey;
+    .clicker-button {
+      background: transparent !important;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      color: dimgrey;
+
+      &:focus,
+      &:active {
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    .collapsed-content {
+      background: transparent !important;
     }
   }
 }

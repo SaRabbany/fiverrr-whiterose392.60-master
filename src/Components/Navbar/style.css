@@ -68,6 +68,9 @@
   display: flex;
   margin-bottom: 0px !important;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item {
@@ -114,6 +117,9 @@
   .hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn {
     display: block;
     margin-left: auto;
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn button {
+    background: transparent;
   }
   .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content {
     display: block;

@@ -15,7 +15,7 @@ const RoadMap = () => {
           <div className="road-map-circle"></div>
           <div className="road-map-circle"></div>
           <div className="road-map-card card-1">
-            <h1>2021</h1>
+            <h1 className="text-secondary fw-bolder">2021</h1>
           </div>
           <div className="road-map-card card-2">
             <h1 h1> Q2</h1>
@@ -23,10 +23,10 @@ const RoadMap = () => {
           </div>
           <div className="road-map-card card-3">
             <p className="mb-2">PolyStarter Token Generation Event $POLR Distribution Marketing Development </p>
-            <h1>2021</h1>
+            <h1>Q3</h1>
           </div>
           <div className="road-map-card card-4">
-            <h1>2021</h1>
+            <h1>Q4</h1>
             <p>PolyStarter Token Generation Event $POLR Distribution Marketing Development </p>
           </div>
           <div className="road-map-card card-5">

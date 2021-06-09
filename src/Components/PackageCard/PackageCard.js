@@ -3,38 +3,38 @@ import React from "react";
 const PackageCard = ({className}) => {
   return (
     <div>
-      <div class={`the-gradient-box ${className}`}>
-        <div class="first-block">
-          <div class="small-line">
+      <div className={`the-gradient-box ${className}`}>
+        <div className="first-block">
+          <div className="small-line">
             <b>BRONZE</b>
           </div>
-          <div class="first-block-title">
+          <div className="first-block-title">
             <h2>100 POLR</h2>
           </div>
         </div>
 
-        <div class="second-block">
-          <div class="the-second-title">
+        <div className="second-block">
+          <div className="the-second-title">
             <h3>9 DAYS</h3>
           </div>
 
-          <div class="second-block-middle">
-            <div class="small-line">
+          <div className="second-block-middle">
+            <div className="small-line">
               <b>LOTTERY</b>
             </div>
-            <div class="the-third-title">
+            <div className="the-third-title">
               <h4>WHITE LIST ALLOCATION</h4>
             </div>
-            <div class="small-line">
+            <div className="small-line">
               <b>lIKE, COMENT, TWEET</b>
             </div>
           </div>
 
-          <div class="small-line">
+          <div className="small-line">
             <b>POOL WEIGHT</b>
           </div>
 
-          <div class="the-number">
+          <div className="the-number">
             <h2>x0.1</h2>
           </div>
         </div>

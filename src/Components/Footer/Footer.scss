@@ -1,0 +1,65 @@
+#footer-part {
+  footer.main-page-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px;
+    background: #101115;
+  }
+  footer.main-page-footer .bamer-side {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  footer.main-page-footer .bamer-side .ufrer-jaga .logo-and-txt {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  footer.main-page-footer .bamer-side .ufrer-jaga .logo-and-txt img {
+    width: 100%;
+  }
+  footer.main-page-footer .bamer-side .niser-jaga p {
+    color: #404145;
+  }
+  footer.main-page-footer .bamer-side .niser-jaga p span b {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  footer.main-page-footer .daner-jaga {
+    color: #505050;
+    width: 25%;
+  }
+  footer.main-page-footer .daner-jaga .ufrer-ordhek,
+  footer.main-page-footer .daner-jaga .niser-ordhek,
+  footer.main-page-footer .daner-jaga .niser-ordhek .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer.main-page-footer .daner-jaga .niser-ordhek .icons {
+    width: 80px;
+    color: #505050;
+    font-size: 15px;
+  }
+  footer.main-page-footer .daner-jaga .contact-lekha h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  footer.main-page-footer .daner-jaga .ufrer-ordhek {
+    margin-bottom: 30px;
+  }
+  footer.main-page-footer .daner-jaga .niser-ordhek .coin-gesko p {
+    font-weight: bold;
+  }
+  @media screen and (max-width: 767px) {
+    footer.main-page-footer {
+      justify-content: space-around;
+      padding: 30px;
+    }
+    footer.main-page-footer .bamer-side,
+    footer.main-page-footer .daner-jaga {
+      width: 100%;
+    }
+  }
+}

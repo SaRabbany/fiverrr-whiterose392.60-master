@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import togglerIcon from "../../Images/toggler-icon.svg"
 import CancelerIcon from "../../Images/times-navbar-clouser-icon.svg"
 import "./style.css"
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import {  NavHashLink } from "react-router-hash-link";
+import polistarterLogo from '../../Images/logo2222.png';
 
 const Navbar = () => {
 
@@ -12,11 +13,20 @@ const Navbar = () => {
         const navbarCloserIcon = document.querySelector(".hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon");
 
         navbarToggleIcon?.addEventListener("click", () => {
-            NavbarContent.classList.toggle("navbar-show");
+          console.log("i am clicking")
+            NavbarContent.classList.add("navbar-show");
         });
-        navbarCloserIcon?.addEventListener("click", () => {
-            NavbarContent.classList.toggle("navbar-show");
+        console.log(navbarToggleIcon)
+        NavbarContent?.addEventListener("click", () => {
+          NavbarContent.classList.remove("navbar-show")
+        })
+        navbarCloserIcon?.addEventListener("click", (e) => {
+            e.preventDefault()
+            NavbarContent.classList.remove("navbar-show");
+            console.log("i am cllicking")
         });
+
+        console.log(navbarCloserIcon)
 
     },[])
 
@@ -26,7 +36,7 @@ const Navbar = () => {
         <nav className="hnazmul-navbar">
           <div className="hnazmul-navbar-container">
             <div className="hnazmul-nav-brand">
-              <h4>Navbar brand</h4>
+              <img src={polistarterLogo} alt="" />
             </div>
             <div className="hnazmul-nav-toggle-btn">
               <button>
@@ -38,17 +48,17 @@ const Navbar = () => {
               <div className="hnazmul-navbar-content-wrapper">
                 <ul className="navbar-list">
                   <li className="navbar-list-item">
-                    <NavHashLink to="/"  className="navbar-list-link">
+                    <NavHashLink to="/#header" className="navbar-list-link">
                       Home
                     </NavHashLink>
                   </li>
                   <li className="navbar-list-item">
-                    <NavHashLink to="/" className="navbar-list-link">
+                    <NavHashLink to="/#about" className="navbar-list-link">
                       About
                     </NavHashLink>
                   </li>
                   <li className="navbar-list-item">
-                    <NavHashLink to="/" className="navbar-list-link">
+                    <NavHashLink to="/#feature" className="navbar-list-link">
                       Subscriptions
                     </NavHashLink>
                   </li>
@@ -58,13 +68,18 @@ const Navbar = () => {
                     </NavHashLink>
                   </li>
                   <li className="navbar-list-item">
-                    <NavHashLink to="/" className="navbar-list-link">
+                    <NavHashLink to="/#tokenomics" className="navbar-list-link">
                       Tokenomics
                     </NavHashLink>
                   </li>
                   <li className="navbar-list-item">
-                    <NavHashLink to="/" className="navbar-list-link">
+                    <NavHashLink to="/#FAQs" className="navbar-list-link">
                       FAQs
+                    </NavHashLink>
+                  </li>
+                  <li className="navbar-list-item">
+                    <NavHashLink to="/#FAQs" className="navbar-list-link">
+                      <button className="theme-btn">Go To app</button>
                     </NavHashLink>
                   </li>
                 </ul>

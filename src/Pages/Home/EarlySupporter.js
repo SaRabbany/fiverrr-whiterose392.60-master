@@ -7,13 +7,13 @@ const EarlySupporter = () => {
             <div className="container">
                 <div className="p-5"></div>
                 <div className="row">
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 title ps-4">
                         <div style={{width:"300px"}}>
-                            <p className="text-secondary fw-bold">A LAUNCHPAD FOR</p>
+                            <p className="text-secondary fw-bold light">A LAUNCHPAD FOR</p>
                             <h1 className="fw-bold">
-                                Early <br /> <span className="theme-text">Supporter</span>
+                                Early  <span className="theme-text d-inline-block d-md-block">Supporter</span>
                             </h1>
-                            <p className="pt-4 text-secondary fw-bold">
+                            <p className="pt-2 pt-md-4 small text-secondary fw-bold">
                                 Launch Pads and accelerators can be a perfect way for verified and trustworthy projects to get early funding, as well as for contributors to get early access to polygon projects.
                             </p>
                         </div>
