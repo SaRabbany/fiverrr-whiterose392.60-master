@@ -8,8 +8,8 @@ const AboutCard = () => {
                 <div className="icon">
                     <img src={icon} alt="" />
                 </div>
-                <h3 className="card-title">Pre-Launch Raising</h3>
-                <p className="text-secondary card-text-A943Ssh">
+                <h3 className="card-title fw-md">Pre-Launch Raising</h3>
+                <p className="text-secondary small card-text-A943Ssh">
                     We enable projects to raise funds until they have a contract that can be deployed. Developers can confidently support the related costs involved in the project by using our Token Vouchers.
                 </p>
             </div>
